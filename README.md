@@ -4,11 +4,11 @@
 
 À compléter test mvt :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
-- URL du site :
-- URL FIGMA :
+- NOM : Veloza Arcila
+- PRÉNOM : Juan Camilo
+- GROUPE : C2
+- URL du site : https://precious-cheesecake-da7edd.netlify.app
+- URL FIGMA : https://www.figma.com/design/0rQjCOC2DImltbmmYhqY6D/Festival-Flash-cin%C3%A9ma-2025?node-id=1-5&t=uxAjaC1IVpnEuP5H-1
 
 ## Sujet
 
