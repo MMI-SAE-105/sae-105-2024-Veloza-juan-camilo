@@ -1,0 +1,13 @@
+.menu {
+    visibility: hidden;
+    display: flex;
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    background-color: var(--bleu-obscure);
+    color: white;
+    flex-direction: column;
+    justify-content: space-between;
+    transform: translateX(100vw);
+    transition: all 0.3s ease-in-out;
+}

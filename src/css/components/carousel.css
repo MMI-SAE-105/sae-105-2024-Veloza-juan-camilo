@@ -1,0 +1,30 @@
+
+
+.carousel__controls{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+    margin: 1em 1em;
+}
+.carousel__container{
+    width: 100%;
+        position: relative;
+        height: 193px;
+        overflow-x: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+}
+.carrousel__button{
+    border: none;
+}
+.carrousel__item img{
+    width: 299px;
+    position: relative;
+    height: 193px;
+    flex-shrink: 0;
+    object-fit: cover;
+}

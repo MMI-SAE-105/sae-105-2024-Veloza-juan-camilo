@@ -12,7 +12,7 @@
             <a class="header__logo-link" href="/">
                 <img 
                 class="header__logo" 
-                src="/assets/icons/LOGO_2.png" 
+                src="/assets/icons/LOGO.svg" 
                 alt="Festival Flash Cinéma 25">
             </a>
 
@@ -46,8 +46,8 @@
                     </li>
                 </ul>
                 <hr>
-                <div class="nav__socials">
-                    <img class="nav__social-icon" src="/assets/icons/IG.svg" alt="Instagram">
+                <div class="menu__secondaire">
+                    <img class="menu__social-icon" src="/assets/icons/IG.svg" alt="Instagram">
                     <img class="nav__social-icon" src="/assets/icons/X.svg" alt="Twitter">
                     <img class="nav__social-icon" src="/assets/icons/youtube.svg" alt="YouTube">
                     <img class="nav__social-icon" src="/assets/icons/Tiktok.svg" alt="TikTok">
@@ -56,13 +56,13 @@
             </nav>
         </header>
         
-        <header class="header-secondary">
+        <!-- <header class="header-secondary">
             <a class="header-secondary__logo-link" href="/index.html">
                 <img class="header-secondary__logo" src="/assets/icons/LOGO.svg" alt="Logo Festival Flash Cinéma 25">
             </a>
             <button class="header-secondary__open-btn"><img src="/assets/icons/PrimeAlignJustify.svg"
                     alt="button hamburguer"></button>
-        </header>
+        </header> -->
     
         <main>
     
@@ -88,7 +88,7 @@
                     <figcaption class="about__caption">Participant des courts métrages - Cérémonie d'ouverture © Mathieuw /
                         Gotty Images</figcaption>
                 </figure>
-                <a href="#" class="btn btn--secondary">En savoir plus</a>
+                <a href="#" class="btn btn--primary">En savoir plus</a>
             </section>
     
             <section class="cards">
@@ -122,12 +122,27 @@
                 </div>
             </section>
     
-            <div class="carousel">
-                <h2 class="title carousel">Partenaires</h2>
-                <img class="carousel__image" src="/assets/img/ornanslogo.jpg" alt="Ornans Logo">
-                <img class="carousel__image" src="/assets/img/France_bleu.jpg" alt="France Bleu">
-                <img class="carousel__image" src="/assets/img/cnc_logo.jpg" alt="CNC">
+            <div class="carousel" aria-labelledby="carousel-heading">
+                <h2 id="carousel-heading" class="carousel__heading sr-only">
+                    Partenaires
+                </h2>
+                <div class="carousel__container" role="region" aria-live="polite">
+                    <div class="carousel__item">
+                        <img src="/assets/img/France_bleu.jpg" alt="France bleu radio" />
+                    </div>
+                    <div class="carousel__item">
+                        <img src="/assets/img/ornanslogo.jpg" alt="Site oficiel ornans bleu"/>
+                    </div>
+                    <div class="carousel__item">
+                        <img src="/assets/img/cnc_logo.jpg" alt="CNC logo" />
+                    </div>
+                </div>
+                <div class="carousel__controls">
+                    <button class="carousel__button carousel__button--avant" aria-label="Défiler vers la gauche"><</button>
+                    <button class="carousel__button carousel__button--suivant" aria-label="Défiler vers la droite">></button>
+                </div>
             </div>
+        </div>
     </main>
     <footer class="footer">
         <img class="footer__logo" 

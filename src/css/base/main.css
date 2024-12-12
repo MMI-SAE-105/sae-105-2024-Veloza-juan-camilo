@@ -6,6 +6,7 @@ h2 {
     font-family: var(--heading-1);
 }
 p,
-a {
+a,
+btn {
     font-family: var(--body);
 }
