@@ -1,0 +1,21 @@
+.header-secondary{
+    margin-top: 46px;
+    margin-left: 13px;
+    margin-bottom: 44px;
+    margin-right: 23px;
+    align-items: center;
+
+    display: flex;
+    justify-content: space-between;
+}
+.header-secondary__open-btn{
+    background-color: white;
+    border: none;
+    transform: scale(1.3);
+}
+.header-secondary__close-btn{
+    margin-right: 24px;
+        background-color: white;
+        border: none;
+        transform: scale(1.3);
+}

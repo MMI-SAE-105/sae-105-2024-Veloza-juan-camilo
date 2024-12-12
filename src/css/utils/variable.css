@@ -1,0 +1,34 @@
+/* Couleurs */
+:root {
+    /* Mode 1 */
+    /* color */
+    --bleu-obscure: #2c2a4a;
+    --vert: #62bbc1;
+    --violet: #72519e;
+    --violet-obscure: #4f518c;
+    --beigne: #f4ebd9;
+    --variation-du-noir-gris: #d5d4d4;
+    --variation-du-noir-gris-claire: #f3f2f2;
+    --variation-du-noir-gris-obscure: #9d9c9c;
+    --variation-du-noir-quasi-noir: #323131;
+}
+
+/* Typographie */
+:root {
+    /* Mode 1 */
+    /* number */
+    --taille-small-texte: 0.625rem;
+    --taille-bouton: 0.75rem;
+    --taille-body-2: 1rem;
+    --taille-body-1: 1.125rem;
+    --taille-heading-3: 1.25rem;
+    --taille-heading-2: 1.5rem;
+    --taille-heading-1: 2.25rem;
+    --taille-heading-0: 4rem;
+    /* string */
+    --body: helvetica;
+    --heading-1: Vina Sans;
+}
+:root{
+    --letter-espacing-small: 0,62rem;
+}

@@ -1,0 +1,11 @@
+*{
+    box-sizing: border-box;
+}
+h1,
+h2 {
+    font-family: var(--heading-1);
+}
+p,
+a {
+    font-family: var(--body);
+}

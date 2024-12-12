@@ -4,45 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Festival Flash Cinéma 25</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="src/js/script.js">
 </head>
 <body>
         <header class="header">
             <a class="header__logo-link" href="/">
-                <img class="header__logo" src="/assets/icons/LOGO_2.svg" alt="Festival Flash Cinéma 25">
+                <img 
+                class="header__logo" 
+                src="/assets/icons/LOGO_2.png" 
+                alt="Festival Flash Cinéma 25">
             </a>
+
+            <button class="header__menu-btn menu-btn" 
+            aria-label="menu" 
+            aria-controls="mainNav">
+                <img src="/assets/icons/PrimeAlignJustify.svg" alt="button hamburguer">
+                <span class="menu-btn__bar" aria-hidden="true"></span>
+            </button>
+
+
+            <nav class="header__menu menu" id="mainNav" aria-hidden="true">
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item">
+                        <a class="menu__link" href="lefestival.html">LE FESTIVAL</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="programme.html">PROGRAMME 2025</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="invites.html">INVITÉS</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="reservation.html">RESERVATION</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="infos-pratiques.html">INFOS PRATIQUES</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+                <hr>
+                <div class="nav__socials">
+                    <img class="nav__social-icon" src="/assets/icons/IG.svg" alt="Instagram">
+                    <img class="nav__social-icon" src="/assets/icons/X.svg" alt="Twitter">
+                    <img class="nav__social-icon" src="/assets/icons/youtube.svg" alt="YouTube">
+                    <img class="nav__social-icon" src="/assets/icons/Tiktok.svg" alt="TikTok">
+                    <img class="nav__social-icon" src="/assets/icons/Facebook.svg" alt="Facebook">
+                </div>
+            </nav>
         </header>
-    
-        <nav class="nav">
-            <ul class="nav__menu">
-                <li class="nav__item"><a href="lefestival.html">LE FESTIVAL</a></li>
-                <li class="nav__item"><a href="programme.html">PROGRAMME 2025</a></li>
-                <li class="nav__item"><a href="invites.html">INVITÉS</a></li>
-                <li class="nav__item"><a href="reservation.html">RÉSERVATION</a></li>
-                <li class="nav__item"><a href="participer.html">PARTICIPER</a></li>
-                <li class="nav__item"><a href="contact.html">CONTACT</a></li>
-            </ul>
-            <hr>
-            <div class="nav__socials">
-                <img class="nav__social-icon" src="/assets/icons/IG.svg" alt="Instagram">
-                <img class="nav__social-icon" src="/assets/icons/X.svg" alt="Twitter">
-                <img class="nav__social-icon" src="/assets/icons/youtube.svg" alt="YouTube">
-                <img class="nav__social-icon" src="/assets/icons/Tiktok.svg" alt="TikTok">
-                <img class="nav__social-icon" src="/assets/icons/Facebook.svg" alt="Facebook">
-            </div>
-        </nav>
-    
+        
         <header class="header-secondary">
             <a class="header-secondary__logo-link" href="/index.html">
                 <img class="header-secondary__logo" src="/assets/icons/LOGO.svg" alt="Logo Festival Flash Cinéma 25">
             </a>
-            <button class="header-secondary__close-btn">x</button>
+            <button class="header-secondary__open-btn"><img src="/assets/icons/PrimeAlignJustify.svg"
+                    alt="button hamburguer"></button>
         </header>
     
         <main>
     
             <section class="hero">
-                <img class="hero__image" src="/assets/img/Affiche.jpg" alt="Affiche du festival flash cinéma 25">
+                <img class="hero__image" src="/assets/img/Affiche.jpg" alt="Affiche du festival flash cinéma 25" width="430">
                 <h1 class="hero__title visually-hidden">Festival Flash Cinéma 25</h1>
             </section>
     
@@ -53,7 +78,7 @@
             </section>
     
             <section class="about">
-                <h2 class="about__title">Flash Cinéma 25</h2>
+                <h2 class="title about">Flash Cinéma 25</h2>
                 <p class="about__text">Laissez-vous emporter par les idées brillantes de créateurs audacieux à travers une
                     sélection de courts-métrages. Respirez l'air pur, créez des souvenirs et partagez votre passion du
                     cinéma avec d'autres.</p>
@@ -67,7 +92,7 @@
             </section>
     
             <section class="cards">
-                <h2 class="cards__title">"Découvrez tout sur Cine Flash 25, à portée de clic !"</h2>
+                <h2 class="title cards">"Découvrez tout sur Cine Flash 25, à portée de clic !"</h2>
                 <hr>
                 <div class="card card--dark">
                     <img class="card__image" src="/assets/icons/LOGO_2.svg" alt="Programme 2025">
@@ -98,33 +123,34 @@
             </section>
     
             <div class="carousel">
-                <h2 class="carousel__title">Partenaires</h2>
+                <h2 class="title carousel">Partenaires</h2>
                 <img class="carousel__image" src="/assets/img/ornanslogo.jpg" alt="Ornans Logo">
                 <img class="carousel__image" src="/assets/img/France_bleu.jpg" alt="France Bleu">
                 <img class="carousel__image" src="/assets/img/cnc_logo.jpg" alt="CNC">
             </div>
-
-        <footer class="footer">
-            <img class="footer__logo" src="/assets/icons/LOGO_2.svg" alt="Logo Festival Flash Cinéma 25">
-            <ul class="footer__menu">
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="mentions_legales.html">Mentions légales</a></li>
-                <li><a href="politiques_et_confidentialite">Politique et confidentialité</a></li>
-            </ul>
-            <div class="footer__newsletter">
-                <h2 class="footer__title">Newsletter</h2>
-                <p class="footer__text">Inscrivez-vous et retrouvez les actualités du festival pour ne rien rater !</p>
-                <input class="footer__input" type="email" placeholder="Email123@gmail.com">
-                <h2 class="footer__follow-title">Nous suivre</h2>
-                <div class="footer__socials">
-                    <img class="footer__social-icon" src="/assets/icons/IG.svg" alt="Instagram">
-                    <img class="footer__social-icon" src="/assets/icons/Facebook.svg" alt="Facebook">
-                    <img class="footer__social-icon" src="/assets/icons/youtube.svg" alt="YouTube">
-                    <img class="footer__social-icon" src="/assets/icons/Tiktok.svg" alt="TikTok">
-                    <img class="footer__social-icon" src="/assets/icons/X.svg" alt="Twitter">
-                </div>
-            </div>
-        </footer>
     </main>
+    <footer class="footer">
+        <img class="footer__logo" 
+        src="/assets/icons/LOGO_2.png" 
+        alt="Logo Festival Flash Cinéma 25">
+        <ul class="footer menu__contact">
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="mentions_legales.html">Mentions légales</a></li>
+            <li><a href="politiques_et_confidentialite">Politique et confidentialité</a></li>
+        </ul>
+        <div class="footer__box">
+            <h2 class="footer__title">News letter</h2>
+                <p class="footer__text">Inscrivez-vous et retrouvez les actualités du festival pour ne rien rater !</p>
+            <input class="footer__input" type="email" placeholder="Email123@gmail.com">
+        </div>
+            <h2 class="footer follow-title">NOUS SUIVRE</h2>
+            <div class="footer socials">
+                <img class="footer__social-icon" src="/assets/icons/IG.svg" alt="Instagram">
+                <img class="footer__social-icon" src="/assets/icons/Facebook.svg" alt="Facebook">
+                <img class="footer__social-icon" src="/assets/icons/youtube.svg" alt="YouTube">
+                <img class="footer__social-icon" src="/assets/icons/Tiktok.svg" alt="TikTok">
+                <img class="footer__social-icon" src="/assets/icons/X.svg" alt="Twitter">
+        </div>
+    </footer>
 </body>
 </html>
