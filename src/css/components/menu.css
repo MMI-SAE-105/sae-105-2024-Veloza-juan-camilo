@@ -6,8 +6,118 @@
     z-index: 1;
     background-color: var(--bleu-obscure);
     color: white;
-    flex-direction: column;
+    padding-left: 40px;
+    padding-right: 28px ;
+    flex-direction: column;;
     justify-content: space-between;
-    transform: translateX(100vw);
     transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+}
+.menu__close-btn {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f1f1f1;
+    position: absolute;
+    top: 40px;
+    left: 380px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menu li, .menu a{
+    border: none;
+    text-decoration: none;
+    padding: 10px;
+
+}
+.header__logo-1{
+    filter: invert(100%) brightness(100%);  
+}
+.menu__social-network.list-unstyled{
+    display: flex;
+    gap: 5px;
+    margin-top: -170px;
+}
+
+.separation__menu{
+    display: flex;
+    margin-left: 20px;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+.menu[aria-hidden="false"] {
+    transform: translateX(0);
+    visibility: visible;
+}
+
+.menu__link {
+    color: white;
+    text-decoration: none;
+    font-size: var(--taille-body-2);
+    display: block;
+}
+
+.menu__link--silent {
+    color: var(--beigne);
+    font-size: var(--taille-body-1);
+}
+
+.menu__item {
+    margin-bottom: var(--space3x);
+    padding-bottom: var(--space1x);
+    border-bottom: 1px solid var(--variation-du-noir-gris-claire);
+}
+
+.menu__social-network,
+.menu__terms {
+    display: flex;
+    gap: 2px;
+    margin-bottom: 2px;
+}
+
+.menu-btn {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-btn__bar,
+.menu-btn__bar::before,
+.menu-btn__bar::after {
+    content: "";
+    background: var(--black);
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    border-radius: 2px;
+    left: 0;
+    z-index: 10;
+    transition: all 0.4s ease-in-out;
+}
+
+.menu-btn__bar::before {
+    top: -10px;
+}
+
+.menu-btn__bar::after {
+    top: 10px;
+}
+
+/* Technique pour transformer les 3 barres du bouton de menu en croix
+Ne pas oublier d'ajouter une transition plus haut pour l'animation */
+.menu-btn[aria-expanded="true"] .menu-btn__bar,
+.menu-btn[aria-expanded="true"] .menu-btn__bar::before,
+.menu-btn[aria-expanded="true"] .menu-btn__bar::after {
+    transform: rotate(135deg);
+    background: var(--white);
+}
+
+.menu-btn[aria-expanded="true"] .menu-btn__bar::before,
+.menu-btn[aria-expanded="true"] .menu-btn__bar::after {
+    transform: rotate(90deg);
+    top: 0;
 }

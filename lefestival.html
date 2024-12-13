@@ -4,116 +4,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Festival Flash Cinéma 25 - Programme et informations sur le festival de cinéma de l'année 2025">
+
     <title>Festival Flash Cinéma 25</title>
     <link rel="stylesheet" href="/src/css/style.css">
+    <script type="module" src="/src/js/script.js"></script>
 </head>
 
 <body>
-<header class="header">
-    <a class="header__logo-link" href="/">
-        <img class="header__logo" src="/assets/icons/LOGO_2.png" alt="Festival Flash Cinéma 25">
-    </a>
-    <button class="header-secondary__close-btn"><img src="/assets/icons/PrimeAlignJustify.svg"
-            alt="button hamburguer"></button>
-    <nav class="nav">
-        <ul class="nav__menu">
-            <li class="nav__item"><a href="lefestival.html">LE FESTIVAL</a></li>
-            <li class="nav__item"><a href="programme.html">PROGRAMME 2025</a></li>
-            <li class="nav__item"><a href="invites.html">INVITÉS</a></li>
-            <li class="nav__item"><a href="reservation.html">RÉSERVATION</a></li>
-            <li class="nav__item"><a href="infos-pratiques.html">INFOS PRATIQUES</a></li>
-            <li class="nav__item"><a href="contact.html">CONTACT</a></li>
-        </ul>
-        <hr>
-        <div class="nav__socials">
-            <img class="nav__social-icon" src="/assets/icons/IG.svg" alt="Instagram">
-            <img class="nav__social-icon" src="/assets/icons/X.svg" alt="Twitter">
-            <img class="nav__social-icon" src="/assets/icons/youtube.svg" alt="YouTube">
-            <img class="nav__social-icon" src="/assets/icons/Tiktok.svg" alt="TikTok">
-            <img class="nav__social-icon" src="/assets/icons/Facebook.svg" alt="Facebook">
-        </div>
-    </nav>
-</header>
+    <header class="header">
+        <a class="header__logo-link" href="/">
+            <img class="header__logo" src="/assets/icons/LOGO.svg" alt="Festival Flash Cinéma 25">
+        </a>
 
-<header class="header-secondary">
+        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
+            <img src="/assets/icons/PrimeAlignJustify.svg" alt="menu">
+            <span class="menu-btn__bar" aria-hidden="true"></span>
+        </button>
+
+        <nav class="header__menu menu" id="mainNav" aria-hidden="true">
+            <header>
+                <img class="header__logo-1" src="/assets/icons/LOGO.svg" alt="Festival Flash Cinéma 25"
+                    style="margin-top: 50px; margin-left: -24px;">
+            </header>
+            <ul class="menu__list list-unstyled" style="list-style-type: none;">
+                <li class="menu__item">
+                    <a class="menu__link" href="lefestival.html">Le Festival</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="programme.html">Programme 2025</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="invites.html">Invités</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="reservation.html">Réservation</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="infos-pratiques.html">Infos Pratiques</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="contact.html">Contact</a>
+                </li>
+                <hr class="separation__menu">
+            </ul>
+            <div class="menu__secondaire">
+                <ul class="menu__social-network list-unstyled" aria-label="Réseaux sociaux"
+                    style="list-style-type: none;">
+                    <li>
+                        <a href="#" aria-label="Visitez notre profil Instagram">
+                            <img src="/assets/icons/IG.svg" alt="Icône Instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="Visitez notre profil Twitter">
+                            <img src="/assets/icons/X.svg" alt="Icône Twitter">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="Visitez notre profil YouTube">
+                            <img src="/assets/icons/youtube.svg" alt="Icône YouTube">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="Visitez notre profil TikTok">
+                            <img src="/assets/icons/Tiktok.svg" alt="Icône TikTok">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="Visitez notre profil Facebook">
+                            <img src="/assets/icons/Facebook.svg" alt="Icône Facebook">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+<!-- <header class="header-secondary">
     <a class="header-secondary__logo-link" href="/index.html">
         <img class="header-secondary__logo" src="/assets/icons/LOGO.svg" alt="Logo Festival Flash Cinéma 25">
     </a>
     <button class="header-secondary__open-btn"><img src="/assets/icons/PrimeAlignJustify.svg"
             alt="button hamburguer"></button>
-</header>
+</header> -->
 
 
     <main class="main-content">
         <article class="information">
-            <h2 class="title event">LE FESTIVAL</h2>
-            <p class="event__text">Le festival Flash Cinéma 25 est un événement cinématographique qui se déroule dans
-                la ville d'Ornans, située dans le département du Doubs...</p>
-            <img class="event__image" src="/assets/img/cine_independante.jpg" alt="Cinéma indépendant">
+            <h2 class="title event_information">LE FESTIVAL</h2>
+            <p class="event__text">Le festival Flash Cinéma 25 est un événement cinématographique qui se déroule dans la ville d'Ornans, située dans
+            le département du Doubs. Ce festival se distingue de ces concurrents par son concept dynamique, en mettant à l'honneur
+            les films courts et des courts métrages capturent la rapidité, l'énergie et l'innovation du septième art (Cinéma).</p>
+            <img class="event__image-films-personnes" src="/assets/img/cine_independante.jpg" alt="Cinéma indépendant">
         </article>
 
         <article class="information">
-            <h2 class="title event">NAISSANCE DU FESTIVAL</h2>
+            <h2 class="title event-naissance">NAISSANCE DU FESTIVAL</h2>
             <p class="event__text">Le Festival Flash Cinéma 25 à Ornans, dans le Doubs, est né d’une idée simple : rendre le cinéma accessible à tous, dans
             un cadre unique et convivial. L’histoire commence il y a quelques années, quand un groupe d’amis passionnés par le
             septième art décide de créer un événement original, où la créativité et la diversité seraient à l’honneur. Leur ambition
-            : offrir un espace où réalisateurs émergents et amateurs pourraient partager leurs œuvres sous les étoiles.Pourquoi
+            : offrir un espace où réalisateurs émergents et amateurs pourraient partager leurs œuvres sous les étoiles.<br><br>
+            Pourquoi
             "Flash" ? Parce que le festival se distingue par la rapidité et la spontanéité des créations présentées. Les
             courts-métrages sélectionnés reflètent des visions singulières, des histoires racontées en quelques minutes mais avec
             une intensité qui marque les esprits. Le format court permet une plus grande accessibilité pour les réalisateurs, tout
-            en captant l’attention d’un public diversifié.Installé dans les magnifiques paysages d’Ornans, ce festival en plein air
+            en captant l’attention d’un public diversifié.<br><br>
+            
+            Installé dans les magnifiques paysages d’Ornans, ce festival en plein air
             est un véritable appel à la découverte et à l’échange. Chacun, qu’il soit cinéphile averti ou simple curieux, est
             accueilli avec chaleur et enthousiasme. Ici, pas de barrière : les projections sont gratuites, ouvertes à tous, et
-            visent à créer un espace inclusif où la rencontre entre les artistes et le public est favorisée.Le Festival Flash Cinéma
+            visent à créer un espace inclusif où la rencontre entre les artistes et le public est favorisée.<br><br>
+            Le Festival Flash Cinéma
             25 est rapidement devenu un rendez-vous incontournable pour les amateurs de cinéma et les créateurs de tous horizons.
             Dans un esprit festif et participatif, il célèbre la liberté d’expression, l’audace et l’imagination. Chaque année, les
             rues d’Ornans vibrent au rythme de ce festival unique, où l’art cinématographique prend vie en plein air, sous les yeux
-            émerveillés de spectateurs venus partager un moment d’exception.p>
+            émerveillés de spectateurs venus partager un moment d’exception.</p>
             <img class="event__image" src="/assets/img/cine_experimental.jpg" alt="Cinéma Alternatif">
         </article>
 
         <section class="box__festival">
-            <h2 class="title box__festival">UN FESTIVAL EN PLEIN AIR</h2>
-            <p class="box__festival__highlight">!</p>
+            <h2 class="title box__festival">UN FESTIVAL EN<br> PLEIN AIR</h2>
             <img class="box__festival__image" src="/assets/img/doubsornans.jpg" alt="Paysage d'Ornans">
             <h3 class="subtitle box__festival">ORANS-DOUBS</h3>
-            <p class="box__festival__text">Notre festival de cinéma à Ornans-Doubs a choisi de s'installer en plein
-                air...</p>
-            <a href="https://www.ornans.fr/" class="btn btn--primary">EN SAVOIR PLUS</a>
+            <p class="box__festival__text">Notre festival de cinéma à Orans-Doubs a choisi de s'installer en plein air pour vous offrir une expérience
+            cinématographique unique et inoubliable, en parfaite harmonie avec notre magnifique région.<br><br>
+            Le cinéma en plein air est une occasion de partager des moments conviviaux entre amis ou en famille. Les spectateurs
+            sont invités à apporter leurs couvertures, leurs coussins et leurs pique-niques pour se créer un espace cosy et
+            personnalisé.
+        </p>
+            <a href="https://www.ornans.fr/" class="btn btn--primary ville">EN SAVOIR PLUS SUR LA VILLE</a>
         </section>
 
         <article class="valeurs">
             <h2 class="title section__valeurs">VALEURS DU FESTIVAL</h2>
             <ul class="section_valeurs__list">
-                <li class="section__valeurs__item"><strong>Accessibilité : </strong>Des projections gratuites et ouvertes à
-                    tous...</li>
-                <li class="section__valeurs__item"><strong>Créativité : </strong>Un espace qui valorise l’innovation...</li>
-                <li class="section__valeurs__item"><strong>Diversité : </strong>Une plateforme où des visions variées se
-                    rencontrent...</li>
-                <li class="section__valeurs__item"><strong>Partage : </strong>Favoriser les échanges entre réalisateurs et
-                    spectateurs...</li>
+                <li class="section__valeurs__item"><strong>Accessibilité : </strong>Des projections gratuites et ouvertes à tous, sans barrières, pour démocratiser le cinéma.</li>
+                <li class="section__valeurs__item"><strong>Créativité : </strong>Un espace qui valorise l’innovation et l’originalité dans les œuvres cinématographiques..</li>
+                <li class="section__valeurs__item"><strong>Diversité : </strong>Une plateforme où des visions et des talents variés se rencontrent et s’expriment.</li>
+                <li class="section__valeurs__item"><strong>Partage : </strong>Favoriser les échanges entre réalisateurs et spectateurs dans une ambiance conviviale et chaleureuse.</li>
             </ul>
             <h2 class="title thematique">THÉMATIQUE</h2>
-            <p class="thematique__text">L'édition met en lumière l’audace et l’imagination à travers des courts-métrages
-                rapides et spontanés...</p>
+            <p class="thematique__text">L'édition met en lumière l’audace et l’imagination à travers des courts-métrages rapides et spontanés. Chaque film
+            reflète des histoires intenses et marquantes, célébrant la capacité du cinéma à capturer l’essence de la vie en un
+            instant.<br><br>
+            
+            Dans le cadre pittoresque d’Ornans, cette édition invite à célébrer la liberté d’expression et l’art de raconter des
+            histoires, tout en rapprochant les amateurs de cinéma et les créateurs du monde entier..</p>
         </article>
 
-        <div class="ticket-container">
+        <div class="ticket-container" style="overflow: hidden;">
             <div class="text-section">
-                <h1 class="main-title">RESERVEZ VOS BILLETS ICI</h1>
+                <h1 class="main-title">RESERVEZ VOS<br> BILLETS ICI</h1>
                 <button class="reserve-button">RESERVEZ ICI</button>
             </div>
             <div class="ticket-icon">
-                <div class="ticket-shape">
-                    <span class="ticket-text">TICKET</span>
-                    <div class="stars">
-                        <span>★</span>
-                        <span>★</span>
-                        <span>★</span>
-                        <span>★</span>
-                        <span>★</span>
-                    </div>
-                </div>
+                    <img src="/assets/img/Ticket.png" alt=""> 
             </div>
         </div>
     </main>
@@ -122,8 +169,8 @@
     <img class="footer__logo" src="/assets/icons/LOGO_2.png" alt="Logo Festival Flash Cinéma 25">
     <ul class="footer menu__contact">
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="mentions_legales.html">Mentions légales</a></li>
-        <li><a href="politiques_et_confidentialite">Politique et confidentialité</a></li>
+        <li><a href="mentionslegales.html">Mentions légales</a></li>
+        <li><a href="confidentialite.html">Politique et confidentialité</a></li>
     </ul>
     <div class="footer__box">
         <h2 class="footer__title">News letter</h2>

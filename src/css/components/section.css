@@ -1,0 +1,212 @@
+.carousel{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.carousel__heading.sr-only{
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    line-height: 110%;
+    padding-top: 25px;
+    border-radius: 40px;
+    padding-bottom: 30px;
+    font-size: var(--taille-heading-1);
+    padding-left: 30px;
+}
+
+/* Festival page */
+.information{
+    padding: 5px;
+    margin-left: 30px
+}
+.title.event_information{
+    font-size: var(--taille-heading-0);  color: var(--bleu-obscure);
+    margin-bottom: 30px;
+}
+.event__text{
+    margin-bottom: 51px;
+}
+.event__image-films-personnes{
+    display: flex;
+    align-items: flex-start;
+    margin-left: -40px;
+}
+.event__image{
+    margin-left: -40px;
+}
+.title.event-naissance{
+    margin-top: 60px;
+    margin-bottom: 40px;
+    font-size: var(--taille-heading-1);
+}
+.box__festival{
+background-color: var(--vert);
+    width: 100%;
+    border-bottom-right-radius: 120px;
+    padding-bottom: 30px;
+}
+h2.title.box__festival{
+    line-height: 110%;
+    padding-left: 40px;
+    padding-top: 20px;
+    font-size: var(--taille-heading-1);
+}
+h2.title.box__festival::after{
+    content: "!";
+}
+.box__festival__text{
+    display: flex;
+    align-items: center;
+}
+.box__festival__image{
+    margin-left: 10px;
+    margin-right: -30px;
+}
+.subtitle.box__festival{
+    padding-left: 40px;
+    padding-top: 30px;
+}
+.box__festival__text{
+    padding-top: -80px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    font-size: var(--taille-body-2);
+    justify-content: left;
+}
+btn.btn--primary.ville{
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.valeurs{
+    margin: 10px;
+}
+h2.title.section__valeurs{
+    font-size: var(--taille-heading-1);
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: -5px;
+}
+.section_valeurs__list{
+    margin-left: 40px;
+    font-size: var(--taille-body-1);
+}
+h2.title.thematique{
+    margin-top: 60px;
+    margin-bottom: 30px;
+    margin-left: 5px;
+    font-size: var(--taille-heading-1);
+}
+.thematique__text{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    font-size: var(--taille-body-2);
+}
+
+/* programme */
+
+.section__header{
+    background-color: var(--bleu-obscure);
+}
+.title.title--highlight{
+    font-size: var(--taille-heading-0);
+    color: var(--variation-du-noir-gris-claire);
+    padding-left: 10px;
+    line-height: 89%;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+hr{
+    border: 1px solid black;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+.section__title{
+    font-size: var(--taille-heading-3);
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+section.films__box{
+    gap: 20px;
+}
+.films__container {
+    width: 90%;
+    /* Ancho relativo al viewport para ser responsivo */
+    max-width: 400px;
+    /* Ancho máximo para pantallas grandes */
+    margin: 10px auto;
+    /* Separación de 10px entre contenedores y centrado */
+    border: 1px solid #000;
+    /* Borde negro */
+    padding: 20px;
+    /* Espaciado interno */
+    box-sizing: border-box;
+    /* Incluir bordes y relleno dentro del ancho/alto */
+    font-family: Arial, sans-serif;
+    /* Fuente base */
+    text-align: left;
+    /* Justificar texto a la izquierda */
+}
+
+.title.films {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.films__genre {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.films__image {
+    display: block;
+    margin: 15px auto;
+    width: 100%;
+    height: auto;
+}
+
+h3 {
+    font-size: 1rem;
+    margin: 10px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 0.9rem;
+    margin: 10px 0;
+    text-align: justify;
+}
+
+.films_dates {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+.films__container+.films__container {
+    margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+    .films__container {
+        max-width: 600px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .films__container {
+        max-width: 800px;
+    }
+}

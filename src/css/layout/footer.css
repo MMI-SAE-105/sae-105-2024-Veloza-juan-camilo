@@ -38,6 +38,8 @@
 
 .footer__box{
     background-color: var(--beigne);
+    padding-bottom: 30px;
+    padding-left: 10px;
 }
 
 .footer__text {
@@ -57,6 +59,7 @@
     border: none;
     font-size: 14px;
     margin-top: 10px;
+    margin-left: 10px;
 }
 
 .footer__input::placeholder {

@@ -1,0 +1,8 @@
+.hero__image{
+    min-width: 300px;
+    width: 430px;
+}
+.visually-hidden{
+    position: relative;
+    top: -9999px;
+}

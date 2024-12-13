@@ -1,5 +1,7 @@
 *{
     box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
 }
 h1,
 h2 {
@@ -9,4 +11,24 @@ p,
 a,
 btn {
     font-family: var(--body);
+}
+body {
+    font-size: var(--taille-body-1);
+    font-family: var(--body);
+    background-color: var(--variation-du-noir-gris-claire);
+    line-height: 1.5;
+    letter-spacing: var(--letter-espacing-small);
+}
+.visuallyhidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+.noscroll{
+    overflow: hidden;
 }

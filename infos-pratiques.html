@@ -1,49 +1,189 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Festival Flash Cinéma 25 - Programme et informations sur le festival de cinéma de l'année 2025">
+
     <title>Festival Flash Cinéma 25</title>
     <link rel="stylesheet" href="/src/css/style.css">
+    <script type="module" src="/src/js/script.js"></script>
 </head>
+
 <body>
-        <header class="header">
-            <a class="header__logo-link" href="/">
-                <img class="header__logo" src="/assets/icons/LOGO_2.png" alt="Festival Flash Cinéma 25">
-            </a>
-            <button class="header-secondary__close-btn"><img src="/assets/icons/PrimeAlignJustify.svg"
-                    alt="button hamburguer"></button>
-            <nav class="nav">
-                <ul class="nav__menu">
-                    <li class="nav__item"><a href="lefestival.html">LE FESTIVAL</a></li>
-                    <li class="nav__item"><a href="programme.html">PROGRAMME 2025</a></li>
-                    <li class="nav__item"><a href="invites.html">INVITÉS</a></li>
-                    <li class="nav__item"><a href="reservation.html">RÉSERVATION</a></li>
-                    <li class="nav__item"><a href="infos-pratiques.html">INFOS PRATIQUES</a></li>
-                    <li class="nav__item"><a href="contact.html">CONTACT</a></li>
+    <header class="header">
+        <a class="header__logo-link" href="/">
+            <img class="header__logo" src="/assets/icons/LOGO.svg" alt="Festival Flash Cinéma 25">
+        </a>
+
+        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
+            <img src="/assets/icons/PrimeAlignJustify.svg" alt="menu">
+            <span class="menu-btn__bar" aria-hidden="true"></span>
+        </button>
+
+        <nav class="header__menu menu" id="mainNav" aria-hidden="true">
+            <header>
+                <img class="header__logo-1" src="/assets/icons/LOGO.svg" alt="Festival Flash Cinéma 25"
+                    style="margin-top: 50px; margin-left: -24px;">
+            </header>
+            <ul class="menu__list list-unstyled" style="list-style-type: none;">
+                <li class="menu__item">
+                    <a class="menu__link" href="lefestival.html">Le Festival</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="programme.html">Programme 2025</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="invites.html">Invités</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="reservation.html">Réservation</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="infos-pratiques.html">Infos Pratiques</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="contact.html">Contact</a>
+                </li>
+                <hr class="separation__menu">
+            </ul>
+            <div class="menu__secondaire">
+                <ul class="menu__social-network list-unstyled" aria-label="Réseaux sociaux"
+                    style="list-style-type: none;">
+                    <li>
+                        <a href="#" aria-label="Visitez notre profil Instagram">
+                            <img src="/assets/icons/IG.svg" alt="Icône Instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="Visitez notre profil Twitter">
+                            <img src="/assets/icons/X.svg" alt="Icône Twitter">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="Visitez notre profil YouTube">
+                            <img src="/assets/icons/youtube.svg" alt="Icône YouTube">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="Visitez notre profil TikTok">
+                            <img src="/assets/icons/Tiktok.svg" alt="Icône TikTok">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="Visitez notre profil Facebook">
+                            <img src="/assets/icons/Facebook.svg" alt="Icône Facebook">
+                        </a>
+                    </li>
                 </ul>
-                <hr>
-                <div class="nav__socials">
-                    <img class="nav__social-icon" src="/assets/icons/IG.svg" alt="Instagram">
-                    <img class="nav__social-icon" src="/assets/icons/X.svg" alt="Twitter">
-                    <img class="nav__social-icon" src="/assets/icons/youtube.svg" alt="YouTube">
-                    <img class="nav__social-icon" src="/assets/icons/Tiktok.svg" alt="TikTok">
-                    <img class="nav__social-icon" src="/assets/icons/Facebook.svg" alt="Facebook">
-                </div>
-            </nav>
-        </header>
-        
-        <header class="header-secondary">
-            <a class="header-secondary__logo-link" href="/index.html">
-                <img class="header-secondary__logo" src="/assets/icons/LOGO.svg" alt="Logo Festival Flash Cinéma 25">
-            </a>
-            <button class="header-secondary__open-btn"><img src="/assets/icons/PrimeAlignJustify.svg"
-                    alt="button hamburguer"></button>
-        </header>
+            </div>
+        </nav>
+    </header>
 <main>
-    <section class="infos-pratiques">
+    <div class="infos-pratiques">
         <h2 class="title infos">INFOS PRATIQUES</h2>
-        <div class="infos-pratiques__content">
-            <div class="infos-pratiques__content__item">
-                <h2 class="infos-pratiques__content__item__title">ACCÈS</h2>
+    </div>
+
+    <section>
+        <div class="tarifs">
+            <h2 class="title tarifs">TARIFS</h2>
+            <p class="tarifs__text">Cérémonie d'ouverture et de clôture _____ Gratuite</p>
+            <p class="tarifs__prix">Prix _______________________________ Gratuite</p>
+            <a href="reservation.html" class="btn btn--primary">VOIR LES FILMS</a>
+        </div>
+    </section>
+
+    <section>
+        <div class="hébergement">
+            <h2 class="title htels-title">HÉBERGEMENT</h2>
+                <p class="htels-proches">Hôtels proches :</p>
+                <ul class="htel-de-ltoile-15-km-dor">
+                    <li class="htel-de-ltoile">Hôtel de l’Étoile : 15 km d’Orans, Route Nationale, 39100 Dole.</li>
+                    <li class="htel-de-ltoile">Chambres d’hôtes Les Tilleuls : À 5 minutes à pied des salles, Orans.</li>
+                </ul>
+                <p class="htels-proches">Campings :</p>
+                <ul class="htel-de-ltoile-15-km-dor">
+                    <li class="htel-de-ltoile">Camping des Platanes : 10 km d’Orans, rive gauche du Doubs.</li>
+                </ul>
+                <p class="htels-proches">Réservez avec antelación para garantizar disponibilidad durante el festival.</p>
+        </div>
+
+        <div class="accs-en-container">
+            <h2 class="title accs-en-voiture">ACCÈS</h2>
+            <p class="accs">Accès :</p>
+            <ul class="parking-gratuit-prs-de-la-sal">
+                <li class="en-train">En train : Gare de Dole, à 20 minutes en voiture d’Orans.</li>
+                <li class="en-train">En voiture : Orans est accessible via la D475.</li>
+                <li class="en-train">Covoiturage : Consultez les groupes locaux ou les plateformes comme BlaBlaCar.</li>
+            </ul>
+            <p class="accs">Parkings :</p>
+            <ul class="parking-gratuit-prs-de-la-sal">
+                <li class="en-train">Parking gratuit près de la Salle des Fêtes.</li>
+                <li>Stationnement limité dans le centre du village, pensez au covoiturage !</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="lieux">
+            <h2 class="title lieux-title">Lieux</h2>
+            <p class="lieux__text"><strong>Adresse : </strong>Pl. de l'Église,25250 Rang</p>
+            <iframe class="lieux__map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2699.298324973792!2d6.561252!3d47.425626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47926dfa66a17ab5%3A0x3cecff4f883e5a74!2sPl.%20de%20l&#39;%C3%89glise%2C%2025250%20Rang!5e0!3m2!1sfr!2sfr!4v1734019037966!5m2!1sfr!2sfr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <section>
+        <div class="questions-box">
+            <h2 class="title faq-title">FAQ</h2>
+            <h2 class="title faq__text"><strong>Les projections sont-elles adaptables aux enfants?</strong></h2>
+
+        <p class="faq__text">Oui, une sélection spéciale "Jeune Public" est prévue</p>
+
+            <h2 class="title faq__text"><strong>Faut-il reserver les places a l'avance?</strong></h2>
+
+        <p class="faq__text">Non, l'entrée est libre, mais l'accés aux salles est limité à leurs capacité</p>
+
+            <h2 class="title faq__text"><strong>Il est possible de participer avec nos film dans cette édition?</strong></h2>
+
+        <p class="faq__text">Les inscriptions sont encore ouvertes pour cette édition, donc vous pouvez vous inscrire dans la page dédiée à
+        l’inscription!</p>
+
+            <h2 class="title faq__text"><strong>Peut-on prendre des photos ou filmer pendant les projections ?</strong></h2>
+
+        <p class="faq__text">Non, il est interdit de filmer ou de prendre des photos pendant les projections pour respecter les droits d’auteur.</p>
+
+            <h2 class="title faq__text"><strong>Puis-je venir avec mon propre pique-nique ?</strong></h2>
+
+        <p class="faq__text">Oui, un point d’information est situé à l’entrée principale de la Salle des Fêtes.</p>
+        <a href="#" class="download-pdf" download="Inscriptions">Inscription Festival</a>
+        </div>
+    </section>
 </main>
+<footer class="footer">
+    <img class="footer__logo" src="/assets/icons/LOGO_2.png" alt="Logo Festival Flash Cinéma 25">
+    <ul class="footer menu__contact">
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="mentionslegales.html">Mentions légales</a></li>
+        <li><a href="confidentialite.html">Politique et confidentialité</a></li>
+    </ul>
+    <div class="footer__box">
+        <h2 class="footer__title">News letter</h2>
+        <p class="footer__text">Inscrivez-vous et retrouvez les actualités du festival pour ne rien rater !</p>
+        <input class="footer__input" type="email" placeholder="Email123@gmail.com">
+    </div>
+    <h2 class="footer follow-title">NOUS SUIVRE</h2>
+    <div class="footer socials">
+        <img class="footer__social-icon" src="/assets/icons/IG.svg" alt="Instagram">
+        <img class="footer__social-icon" src="/assets/icons/Facebook.svg" alt="Facebook">
+        <img class="footer__social-icon" src="/assets/icons/youtube.svg" alt="YouTube">
+        <img class="footer__social-icon" src="/assets/icons/Tiktok.svg" alt="TikTok">
+        <img class="footer__social-icon" src="/assets/icons/X.svg" alt="Twitter">
+    </div>
+</footer>
+</body>
+</html>

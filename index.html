@@ -1,71 +1,87 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Festival Flash Cinéma 25 - Programme et informations sur le festival de cinéma de l'année 2025">
+
     <title>Festival Flash Cinéma 25</title>
     <link rel="stylesheet" href="/src/css/style.css">
-    <link rel="stylesheet" href="src/js/script.js">
+    <script type="module" src="/src/js/script.js"></script>
 </head>
+
 <body>
-        <header class="header">
-            <a class="header__logo-link" href="/">
-                <img 
-                class="header__logo" 
-                src="/assets/icons/LOGO.svg" 
-                alt="Festival Flash Cinéma 25">
-            </a>
+    <header class="header">
+        <a class="header__logo-link" href="/">
+            <img class="header__logo" src="/assets/icons/LOGO.svg" alt="Festival Flash Cinéma 25">
+        </a>
 
-            <button class="header__menu-btn menu-btn" 
-            aria-label="menu" 
-            aria-controls="mainNav">
-                <img src="/assets/icons/PrimeAlignJustify.svg" alt="button hamburguer">
-                <span class="menu-btn__bar" aria-hidden="true"></span>
-            </button>
+        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
+            <img src="/assets/icons/PrimeAlignJustify.svg" alt="menu">
+            <span class="menu-btn__bar" aria-hidden="true"></span>
+        </button>
 
-
-            <nav class="header__menu menu" id="mainNav" aria-hidden="true">
-                <ul class="menu__list list-unstyled">
-                    <li class="menu__item">
-                        <a class="menu__link" href="lefestival.html">LE FESTIVAL</a>
+        <nav class="header__menu menu" id="mainNav" aria-hidden="true">
+            
+            <header>
+            <button class="menu__close-btn" aria-label="Cerrar menú">X</button>
+            <img class="header__logo-1" src="/assets/icons/LOGO.svg" alt="Festival Flash Cinéma 25" style="margin-top: 50px; margin-left: -24px;">
+            </header>
+            <ul class="menu__list list-unstyled" style="list-style-type: none;">
+                <li class="menu__item">
+                    <a class="menu__link" href="lefestival.html">Le Festival</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="programme.html">Programme 2025</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="invites.html">Invités</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="reservation.html">Réservation</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="infos-pratiques.html">Infos Pratiques</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="contact.html">Contact</a>
+                </li>
+                <hr class="separation__menu">
+            </ul>
+            <div class="menu__secondaire">
+                <ul class="menu__social-network list-unstyled" aria-label="Réseaux sociaux" style="list-style-type: none;">
+                    <li>
+                        <a href="#" aria-label="Visitez notre profil Instagram">
+                            <img src="/assets/icons/IG.svg" alt="Icône Instagram">
+                        </a>
                     </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="programme.html">PROGRAMME 2025</a>
+                    <li>
+                        <a href="#" aria-label="Visitez notre profil Twitter">
+                            <img src="/assets/icons/X.svg" alt="Icône Twitter">
+                        </a>
                     </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="invites.html">INVITÉS</a>
+                    <li>
+                        <a href="#" aria-label="Visitez notre profil YouTube">
+                            <img src="/assets/icons/youtube.svg" alt="Icône YouTube">
+                        </a>
                     </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="reservation.html">RESERVATION</a>
+                    <li>
+                        <a href="#" aria-label="Visitez notre profil TikTok">
+                            <img src="/assets/icons/Tiktok.svg" alt="Icône TikTok">
+                        </a>
                     </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="infos-pratiques.html">INFOS PRATIQUES</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="contact.html">CONTACT</a>
+                    <li>
+                        <a href="#" aria-label="Visitez notre profil Facebook">
+                            <img src="/assets/icons/Facebook.svg" alt="Icône Facebook">
+                        </a>
                     </li>
                 </ul>
-                <hr>
-                <div class="menu__secondaire">
-                    <img class="menu__social-icon" src="/assets/icons/IG.svg" alt="Instagram">
-                    <img class="nav__social-icon" src="/assets/icons/X.svg" alt="Twitter">
-                    <img class="nav__social-icon" src="/assets/icons/youtube.svg" alt="YouTube">
-                    <img class="nav__social-icon" src="/assets/icons/Tiktok.svg" alt="TikTok">
-                    <img class="nav__social-icon" src="/assets/icons/Facebook.svg" alt="Facebook">
-                </div>
-            </nav>
-        </header>
-        
-        <!-- <header class="header-secondary">
-            <a class="header-secondary__logo-link" href="/index.html">
-                <img class="header-secondary__logo" src="/assets/icons/LOGO.svg" alt="Logo Festival Flash Cinéma 25">
-            </a>
-            <button class="header-secondary__open-btn"><img src="/assets/icons/PrimeAlignJustify.svg"
-                    alt="button hamburguer"></button>
-        </header> -->
-    
+            </div>
+        </nav>
+    </header>
         <main>
-    
             <section class="hero">
                 <img class="hero__image" src="/assets/img/Affiche.jpg" alt="Affiche du festival flash cinéma 25" width="430">
                 <h1 class="hero__title visually-hidden">Festival Flash Cinéma 25</h1>
@@ -73,12 +89,12 @@
     
             <section class="intro">
                 <p class="intro__subtitle">Une scène pour le cinéma des courts métrages</p>
-                <h2 class="intro__quote">"Le court-métrage : l'art de raconter grand en peu de temps."</h2>
+                <h2 class="intro__quote">"Le court-métrage : <br>l'art de raconter grand <br> en peu de temps."</h2>
                 <a href="reservation.html" class="btn btn--primary">Réservez vos tickets ici !</a>
             </section>
     
             <section class="about">
-                <h2 class="title about">Flash Cinéma 25</h2>
+                <h2 class="title about-cinema">Flash Cinéma 25</h2>
                 <p class="about__text">Laissez-vous emporter par les idées brillantes de créateurs audacieux à travers une
                     sélection de courts-métrages. Respirez l'air pur, créez des souvenirs et partagez votre passion du
                     cinéma avec d'autres.</p>
@@ -92,80 +108,101 @@
             </section>
     
             <section class="cards">
-                <h2 class="title cards">"Découvrez tout sur Cine Flash 25, à portée de clic !"</h2>
-                <hr>
-                <div class="card card--dark">
-                    <img class="card__image" src="/assets/icons/LOGO_2.svg" alt="Programme 2025">
-                    <h3 class="card__title">Programme 2025</h3>
+                <h2 class="title cards">"Decouvrez tout sur Cine Flash 25,<br> a portee de clic! clic!"</h2>
+                <hr class="card__separation">
+                <div class="card card--dark" style="overflow: hidden;">
+                    <img class="card__image" src="/assets/icons/LOGO_2.png" alt="Programme 2025">
+                <div class="card__container">
+                    <h3 class="card__title">LE FESTIVAL</h3>
                     <p class="card__text">Vous souhaitez vous rendre au festival, mais vous n'y connaissez rien et vous
-                        voulez y participer ? Ne vous inquiétez pas ! Découvrez le festival, son emplacement, ses jurys et
+                        voulez y participer ? <br><br>NE VOUS INQUIÉTEZ PAS ! <br>Découvrez le festival, son emplacement, ses jurys et
                         les collaborateurs qui rendent ce grand événement possible.</p>
-                    <a href="lefestival.html" class="btn btn--light">En savoir plus</a>
+                    <a href="lefestival.html" class="btn btn--light" style="margin-left: 220px;">En savoir plus</a>
+                </div>
                 </div>
     
-                <div class="card card--dark">
-                    <img class="card__image" src="/assets/img/affichessanstitre.jpg" alt="Programme 2025">
-                    <h3 class="card__title">Programme 2025</h3>
-                    <p class="card__text">Découvrez le programme de cette première édition du festival flash cinéma 2025, où
-                        vous trouverez des aventures passionnantes, des films qui vous feront soupirer d'émotion et bien
-                        plus encore. À ne pas manquer !</p>
-                    <a href="Programme.html" class="btn btn--light">En savoir plus</a>
+                <div class="card card--dark" style="overflow: hidden;">
+                    <img class="card__image-affiche" src="/assets/img/affichessanstitre.png" alt="Programme 2025" style="scale: 1.5;">
+                    <div class="card__container">
+                        <h3 class="card__title">PROGRAMME 2025L</h3>
+                        <p class="card__text">Vous souhaitez vous rendre au festival, mais vous n'y connaissez rien et vous
+                            voulez y participer ? <br><br>NE VOUS INQUIÉTEZ PAS ! <br>Découvrez le festival, son emplacement, ses jurys
+                            et
+                            les collaborateurs qui rendent ce grand événement possible.</p>
+                        <a href="lefestival.html" class="btn btn--light" style="margin-left: 220px;">En savoir plus</a>
+                    </div>
                 </div>
     
-                <div class="card">
-                    <img class="card__image" src="/assets/img/cinemapersonnes.jpg" alt="Les invités">
-                    <h3 class="card__title">Les invités</h3>
-                    <p class="card__text">Découvrez les esprits qui se cachent derrière les critiques de vos films préférés,
-                        leurs noms et un peu de leur histoire. Ils s'appuieront sur leur expérience et leur parcours dans
-                        l'industrie cinématographique.</p>
-                    <a href="Programme.html" class="btn btn--light">En savoir plus</a>
+                <div class="card card--dark" style="overflow: hidden;">
+                    <img class="card__image-cine" src="/assets/img/cinemapersonnes.png" alt="Programme 2025">
+                    <div class="card__container">
+                        <h3 class="card__title">LES INVITÉS</h3>
+                        <p class="card__text">Vous souhaitez vous rendre au festival, mais vous n'y connaissez rien et vous
+                            voulez y participer ? <br><br>NE VOUS INQUIÉTEZ PAS ! <br>Découvrez le festival, son emplacement, ses jurys
+                            et
+                            les collaborateurs qui rendent ce grand événement possible.</p>
+                        <a href="lefestival.html" class="btn btn--light" style="margin-left: 220px;">En savoir plus</a>
+                    </div>
+                </div>
+
+                <div class="card card--dark" style="overflow: hidden;">
+                    <img class="card__image-cinema" src="/assets/img/cinemaplanair.jpg" alt="Programme 2025">
+                    <div class="card__container">
+                        <h3 class="card__title">RESERVATION</h3>
+                        <p class="card__text">Vous souhaitez vous rendre au festival, mais vous n'y connaissez rien et vous
+                            voulez y participer ? <br><br>NE VOUS INQUIÉTEZ PAS ! <br>Découvrez le festival, son emplacement, ses jurys
+                            et
+                            les collaborateurs qui rendent ce grand événement possible.</p>
+                        <a href="lefestival.html" class="btn btn--light" style="margin-left: 220px;">En savoir plus</a>
+                    </div>
+                </div>
+
+                <div class="card card--dark" style="overflow: hidden;">
+                    <img class="card__image-participation" src="/assets/img/participation_image.jpg" alt="Programme 2025">
+                    <div class="card__container">
+                        <h3 class="card__title">PARTICIPER</h3>
+                        <p class="card__text">Vous souhaitez vous rendre au festival, mais vous n'y connaissez rien et vous
+                            voulez y participer ? <br><br>NE VOUS INQUIÉTEZ PAS ! <br>Découvrez le festival, son emplacement, ses jurys
+                            et
+                            les collaborateurs qui rendent ce grand événement possible.</p>
+                        <a href="lefestival.html" class="btn btn--light" style="margin-left: 220px;">En savoir plus</a>
+                    </div>
                 </div>
             </section>
-    
-            <div class="carousel" aria-labelledby="carousel-heading">
-                <h2 id="carousel-heading" class="carousel__heading sr-only">
-                    Partenaires
-                </h2>
-                <div class="carousel__container" role="region" aria-live="polite">
-                    <div class="carousel__item">
-                        <img src="/assets/img/France_bleu.jpg" alt="France bleu radio" />
-                    </div>
-                    <div class="carousel__item">
-                        <img src="/assets/img/ornanslogo.jpg" alt="Site oficiel ornans bleu"/>
-                    </div>
-                    <div class="carousel__item">
-                        <img src="/assets/img/cnc_logo.jpg" alt="CNC logo" />
-                    </div>
-                </div>
-                <div class="carousel__controls">
-                    <button class="carousel__button carousel__button--avant" aria-label="Défiler vers la gauche"><</button>
-                    <button class="carousel__button carousel__button--suivant" aria-label="Défiler vers la droite">></button>
-                </div>
+    <section class="carousel" aria-labelledby="carousel-heading">
+        <h2 id="carousel-heading" class="sr-only">Partenaires</h2>
+        <div class="carousel__container" role="region" aria-live="polite">
+            <div class="carousel__item carousel__item--active"><img src="assets/img/France_bleu.jpg" alt="France Bleu">
             </div>
+            <div class="carousel__item"><img src="assets/img/ornanslogo.jpg" alt="Ornans"></div>
+            <div class="carousel__item"><img src="assets/img/cnc_logo.jpg" alt="CNC"></div>
         </div>
+        <div class="carousel__controls">
+            <button class="carousel__button carousel__button--prev" aria-label="Défiler vers la gauche">&lt;</button>
+            <button class="carousel__button carousel__button--next" aria-label="Défiler vers la droite">&gt;</button>
+        </div>
+    </section>
     </main>
-    <footer class="footer">
-        <img class="footer__logo" 
-        src="/assets/icons/LOGO_2.png" 
-        alt="Logo Festival Flash Cinéma 25">
-        <ul class="footer menu__contact">
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="mentions_legales.html">Mentions légales</a></li>
-            <li><a href="politiques_et_confidentialite">Politique et confidentialité</a></li>
-        </ul>
-        <div class="footer__box">
-            <h2 class="footer__title">News letter</h2>
-                <p class="footer__text">Inscrivez-vous et retrouvez les actualités du festival pour ne rien rater !</p>
-            <input class="footer__input" type="email" placeholder="Email123@gmail.com">
-        </div>
-            <h2 class="footer follow-title">NOUS SUIVRE</h2>
-            <div class="footer socials">
-                <img class="footer__social-icon" src="/assets/icons/IG.svg" alt="Instagram">
-                <img class="footer__social-icon" src="/assets/icons/Facebook.svg" alt="Facebook">
-                <img class="footer__social-icon" src="/assets/icons/youtube.svg" alt="YouTube">
-                <img class="footer__social-icon" src="/assets/icons/Tiktok.svg" alt="TikTok">
-                <img class="footer__social-icon" src="/assets/icons/X.svg" alt="Twitter">
-        </div>
-    </footer>
+<footer class="footer">
+    <img class="footer__logo" src="/assets/icons/LOGO_2.png" alt="Logo Festival Flash Cinéma 25">
+    <ul class="footer menu__contact">
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="mentionslegales.html">Mentions légales</a></li>
+        <li><a href="confidentialite.html">Politique et confidentialité</a></li>
+    </ul>
+    <div class="footer__box">
+        <h2 class="footer__title">News letter</h2>
+        <p class="footer__text">Inscrivez-vous et retrouvez les actualités du festival pour ne rien rater !</p>
+        <input class="footer__input" type="email" placeholder="Email123@gmail.com">
+    </div>
+    <h2 class="footer follow-title">NOUS SUIVRE</h2>
+    <div class="footer socials">
+        <img class="footer__social-icon" src="/assets/icons/IG.svg" alt="Instagram">
+        <img class="footer__social-icon" src="/assets/icons/Facebook.svg" alt="Facebook">
+        <img class="footer__social-icon" src="/assets/icons/youtube.svg" alt="YouTube">
+        <img class="footer__social-icon" src="/assets/icons/Tiktok.svg" alt="TikTok">
+        <img class="footer__social-icon" src="/assets/icons/X.svg" alt="Twitter">
+    </div>
+</footer>
 </body>
 </html>

@@ -1,37 +1,48 @@
-const nav = document.querySelector(".menu");
-const toggle = document.querySelector(".menu-btn");
+// Menú
+const nav = document.querySelector("#mainNav");
+const menuToggle = document.querySelector(".menu-btn");
+const closeButton = document.querySelector(".menu__close-btn");
 const page = document.body;
 
-if (toggle && nav) {
-    toggle.addEventListener("click", () => {
-    const isOpen = toggle.ariaExpanded === "true";
-    const isClosed = !isOpen;
+if (menuToggle && nav) {
+    menuToggle.addEventListener("click", () => {
+        const isOpen = menuToggle.ariaExpanded === "true";
+        const isClosed = !isOpen;
 
-    toggle.ariaExpanded = isClosed;
-    nav.ariaHidden = isOpen;
-    page.classList.toggle("noscroll", isClosed);
-});
+        menuToggle.ariaExpanded = isClosed;
+        nav.ariaHidden = isOpen;
+        page.classList.toggle("noscroll", isClosed);
+    });
 }
 
-// carrousel
+if (closeButton && nav && menuToggle) {
+    closeButton.addEventListener("click", () => {
+        nav.ariaHidden = true;
+        menuToggle.ariaExpanded = false;
+        page.classList.remove("noscroll");
+    });
+}
 
+// Carrusel
 const carousel = document.querySelector('.carousel__container');
-const carouselItems = document.querySelector('.carousel__constrols');
-const premierItem = document.querySelector(".carousel__item");
-const scrollAmount = premierItem.clientWidth;
-
-const careousel1 = document.querySelector('.carousel__container');
-
+const items = document.querySelectorAll(".carousel__item");
 const prevButton = document.querySelector('.carousel__button--prev');
-
 const nextButton = document.querySelector('.carousel__button--next');
+let currentIndex = 0;
 
-if (carousel) {
+if (carousel && items.length > 0 && prevButton && nextButton) {
+    const updateCarousel = () => {
+        const offset = -currentIndex * items[0].clientWidth;
+        carousel.style.transform = `translateX(${offset}px)`;
+    };
+
     prevButton.addEventListener('click', () => {
-        carousel.scrollBy({ left: -scrollAmount, behavior: "smooth" });
-});
-    nextButton.addEventListener('click', () => {
-        carousel.scrollBy({ left: scrollAmount, behavior: "smooth" });
+        currentIndex = (currentIndex - 1 + items.length) % items.length;
+        updateCarousel();
+    });
 
+    nextButton.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % items.length;
+        updateCarousel();
     });
 }

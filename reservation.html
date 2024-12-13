@@ -4,43 +4,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Festival Flash Cinéma 25 - Programme et informations sur le festival de cinéma de l'année 2025">
+
     <title>Festival Flash Cinéma 25</title>
     <link rel="stylesheet" href="/src/css/style.css">
+    <script type="module" src="/src/js/script.js"></script>
 </head>
 
 <body>
     <header class="header">
         <a class="header__logo-link" href="/">
-            <img class="header__logo" src="/assets/icons/LOGO_2.png" alt="Festival Flash Cinéma 25">
+            <img class="header__logo" src="/assets/icons/LOGO.svg" alt="Festival Flash Cinéma 25">
         </a>
-        <button class="header-secondary__close-btn"><img src="/assets/icons/PrimeAlignJustify.svg"
-                alt="button hamburguer"></button>
-        <nav class="nav">
-            <ul class="nav__menu">
-                <li class="nav__item"><a href="lefestival.html">LE FESTIVAL</a></li>
-                <li class="nav__item"><a href="programme.html">PROGRAMME 2025</a></li>
-                <li class="nav__item"><a href="invites.html">INVITÉS</a></li>
-                <li class="nav__item"><a href="reservation.html">RÉSERVATION</a></li>
-                <li class="nav__item"><a href="infos-pratiques.html">INFOS PRATIQUES</a></li>
-                <li class="nav__item"><a href="contact.html">CONTACT</a></li>
+
+        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
+            <img src="/assets/icons/PrimeAlignJustify.svg" alt="menu">
+            <span class="menu-btn__bar" aria-hidden="true"></span>
+        </button>
+
+        <nav class="header__menu menu" id="mainNav" aria-hidden="true">
+            <header>
+                <img class="header__logo-1" src="/assets/icons/LOGO.svg" alt="Festival Flash Cinéma 25"
+                    style="margin-top: 50px; margin-left: -24px;">
+            </header>
+            <ul class="menu__list list-unstyled" style="list-style-type: none;">
+                <li class="menu__item">
+                    <a class="menu__link" href="lefestival.html">Le Festival</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="programme.html">Programme 2025</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="invites.html">Invités</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="reservation.html">Réservation</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="infos-pratiques.html">Infos Pratiques</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="contact.html">Contact</a>
+                </li>
+                <hr class="separation__menu">
             </ul>
-            <hr>
-            <div class="nav__socials">
-                <img class="nav__social-icon" src="/assets/icons/IG.svg" alt="Instagram">
-                <img class="nav__social-icon" src="/assets/icons/X.svg" alt="Twitter">
-                <img class="nav__social-icon" src="/assets/icons/youtube.svg" alt="YouTube">
-                <img class="nav__social-icon" src="/assets/icons/Tiktok.svg" alt="TikTok">
-                <img class="nav__social-icon" src="/assets/icons/Facebook.svg" alt="Facebook">
+            <div class="menu__secondaire">
+                <ul class="menu__social-network list-unstyled" aria-label="Réseaux sociaux"
+                    style="list-style-type: none;">
+                    <li>
+                        <a href="#" aria-label="Visitez notre profil Instagram">
+                            <img src="/assets/icons/IG.svg" alt="Icône Instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="Visitez notre profil Twitter">
+                            <img src="/assets/icons/X.svg" alt="Icône Twitter">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="Visitez notre profil YouTube">
+                            <img src="/assets/icons/youtube.svg" alt="Icône YouTube">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="Visitez notre profil TikTok">
+                            <img src="/assets/icons/Tiktok.svg" alt="Icône TikTok">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="Visitez notre profil Facebook">
+                            <img src="/assets/icons/Facebook.svg" alt="Icône Facebook">
+                        </a>
+                    </li>
+                </ul>
             </div>
         </nav>
-    </header>
-    
-    <header class="header-secondary">
-        <a class="header-secondary__logo-link" href="/index.html">
-            <img class="header-secondary__logo" src="/assets/icons/LOGO.svg" alt="Logo Festival Flash Cinéma 25">
-        </a>
-        <button class="header-secondary__open-btn"><img src="/assets/icons/PrimeAlignJustify.svg"
-                alt="button hamburguer"></button>
     </header>
 
     <main>
@@ -180,8 +219,8 @@
     <img class="footer__logo" src="/assets/icons/LOGO_2.png" alt="Logo Festival Flash Cinéma 25">
     <ul class="footer menu__contact">
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="mentions_legales.html">Mentions légales</a></li>
-        <li><a href="politiques_et_confidentialite">Politique et confidentialité</a></li>
+        <li><a href="mentionslegales.html">Mentions légales</a></li>
+        <li><a href="confidentialite.html">Politique et confidentialité</a></li>
     </ul>
     <div class="footer__box">
         <h2 class="footer__title">News letter</h2>

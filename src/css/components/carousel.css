@@ -1,30 +1,58 @@
-
-
-.carousel__controls{
-    display:flex;
+.carousel__controls {
+    display: flex;
     align-items: center;
     justify-content: center;
-    gap:1rem;
-    margin: 1em 1em;
+    gap: 1rem;
+    margin: 1em 0;
 }
-.carousel__container{
+
+.carousel__container {
     width: 100%;
-        position: relative;
-        height: 193px;
-        overflow-x: auto;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 14px;
-}
-.carrousel__button{
-    border: none;
-}
-.carrousel__item img{
-    width: 299px;
     position: relative;
+    height: 193px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+
+.carousel__button {
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    color: #000;
+    cursor: pointer;
+}
+
+.carousel__item img {
+    width: 299px;
     height: 193px;
     flex-shrink: 0;
     object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+
+.carousel__controls button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+
+.carousel__item--active {
+    transform: translateX(0);
+}
+
+
+.carousel__item {
+    transform: translateX(100%);
+    transition: transform 0.5s ease;
+}
+
+
+.carousel__container {
+    flex-wrap: nowrap;
 }
