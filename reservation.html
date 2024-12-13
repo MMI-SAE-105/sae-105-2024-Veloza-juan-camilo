@@ -24,7 +24,9 @@
         </button>
 
         <nav class="header__menu menu" id="mainNav" aria-hidden="true">
+
             <header>
+                <button class="menu__close-btn" aria-label="Cerrar menú">X</button>
                 <img class="header__logo-1" src="/assets/icons/LOGO.svg" alt="Festival Flash Cinéma 25"
                     style="margin-top: 50px; margin-left: -24px;">
             </header>
@@ -84,19 +86,23 @@
 
     <main>
         <div class="container">
-            <div class="star">★</div>
-            <h2 class="title reservation">
-                RE<br><span>ser</span><br>vation
-            </h2>
+        <h2 class="title-reservation">
+            <span class="star">★</span>
+            <span class="line">RE</span><br>
+            <span class="line middle">ser</span><br>
+            <span class="line">vation</span>
+        </h2>
             <p class="description">
                 "Ne manquez pas votre place ! Réservez dès maintenant pour plonger dans le monde du 7e Art en plein air."
             </p>
             <img src="/assets/img/chaise.jpg" alt="Silla de director" class="chair">
         </div>
+
     <div class="seance">
         <h2 class="title seance">SÉANCE 1</h2>
     </div>
-    <section class="films">
+
+    <article class="films">
         <h3 class="subtitle films__date-seance">VENDREDI, 8 AOUT 2025</h3>
         <hr class="separation__gras">
     
@@ -127,13 +133,13 @@
         </div>
     
         <hr class="separation">
-    </section>
+    </article>
 
     <div class="seance">
         <h2 class="title seance">SÉANCE 2</h2>
     </div>
 
-    <section class="films">
+    <article class="films">
         <h3 class="subtitle films__date-seance">SAMEDI, 9 AOUT 2025</h3>
         <hr class="separation__gras">
 
@@ -164,13 +170,13 @@
             <p class="movie__text">Zero dans un autre monde<br>Film de Natha Drake</p>
             <a href="films.html" class="btn btn--primary">RECERVEZ</a>
         </div>
-    </section>
+    </article>
 
     <div class="seance">
         <h2 class="title seance">SÉANCE 3</h2>
     </div>
 
-    <section class="films">
+    <article class="films">
         <h3 class="subtitle films__date-seance">DIMANCHE, 10 AOUT 2025</h3>
         <hr class="separation__gras">
 
@@ -210,11 +216,8 @@
         <h2 class="cadre__title reservation">UN PROBLEME AVEC TA RESERVATION?</h2>
         <p class="cadre__text">CONTACTEZ-NOUS ET NOUS SERONS RAVIS DE VOUS AIDER</p>
         <a href="participer.html" class="btn btn btn--tertiary">CONTACT</a>
-    </section>
-
-    </section>
-    </main>
-
+    </article>
+</main>
 <footer class="footer">
     <img class="footer__logo" src="/assets/icons/LOGO_2.png" alt="Logo Festival Flash Cinéma 25">
     <ul class="footer menu__contact">

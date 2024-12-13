@@ -25,6 +25,7 @@
 }
 .event__text{
     margin-bottom: 51px;
+    margin-right: 35px;
 }
 .event__image-films-personnes{
     display: flex;
@@ -103,12 +104,75 @@ h2.title.thematique{
     margin-bottom: 40px;
     font-size: var(--taille-body-2);
 }
+.ticket-container {
+    display: flex;
+    align-items: center;
+    background-color: #6c4da7;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.text-section {
+    margin-right: 20px;
+    text-align: left;
+}
+
+.main-title {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 0 0 10px;
+    font-size: var(--taille-body-0);
+}
+
+.reserve-button {
+    background-color: #f5e3ca;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.reserve-button:hover {
+    background-color: #e4d2b7;
+}
+
+.ticket-icon {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    height: 100px;
+    width: 150px;
+
+}
+
+.ticket-shape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.ticket-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #6c4da7;
+    margin-bottom: 5px;
+}
 
 /* programme */
 
 .section__header{
     background-color: var(--bleu-obscure);
 }
+
 .title.title--highlight{
     font-size: var(--taille-heading-0);
     color: var(--variation-du-noir-gris-claire);
@@ -116,6 +180,10 @@ h2.title.thematique{
     line-height: 89%;
     margin-top: 60px;
     margin-bottom: 30px;
+}
+.title.title--highlight::after {
+    content: "★";
+    padding-left: 70px;
 }
 hr{
     border: 1px solid black;
@@ -133,21 +201,13 @@ section.films__box{
 }
 .films__container {
     width: 90%;
-    /* Ancho relativo al viewport para ser responsivo */
     max-width: 400px;
-    /* Ancho máximo para pantallas grandes */
     margin: 10px auto;
-    /* Separación de 10px entre contenedores y centrado */
     border: 1px solid #000;
-    /* Borde negro */
     padding: 20px;
-    /* Espaciado interno */
     box-sizing: border-box;
-    /* Incluir bordes y relleno dentro del ancho/alto */
     font-family: Arial, sans-serif;
-    /* Fuente base */
     text-align: left;
-    /* Justificar texto a la izquierda */
 }
 
 .title.films {
@@ -158,7 +218,7 @@ section.films__box{
 
 .films__genre {
     display: inline-block;
-    background-color: black;
+    background-color: var(--bleu-obscure);
     color: white;
     padding: 5px 10px;
     border-radius: 10px;
@@ -174,30 +234,105 @@ section.films__box{
     height: auto;
 }
 
-h3 {
+h3.film__name {
     font-size: 1rem;
     margin: 10px 0;
     font-weight: bold;
     text-transform: uppercase;
 }
 
-p {
+p.film__information{
     font-size: 0.9rem;
     margin: 10px 0;
-    text-align: justify;
 }
 
 .films_dates {
-    font-size: 1rem;
-    font-weight: bold;
+    font-size: var(--taille-heading-2);
+    font-weight: bolder;
     margin-top: 20px;
-    text-align: center;
+    text-align: end;
 }
 
 
 .films__container+.films__container {
     margin-top: 30px;
 }
+
+.cadre__participer {
+    position: relative;
+    background-color: #473a83;
+    color: white;
+    padding: 30px 10px;
+    text-align: left;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cadre__participer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, transparent 70%);
+    opacity: 0.6;
+    z-index: 0;
+    pointer-events: none;
+    mask-image: url('/assets/img/points.png');
+    mask-repeat: no-repeat;
+    mask-position: center;
+}
+
+.cadre__title {
+    font-size: var(--taille-heading-1);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    z-index: 1;
+    position: relative;
+    margin-right: 150px;
+    line-height: 110%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+.btn.btn--secondary {
+    display: inline-block;
+    padding: 15px 30px;
+    color: #000;
+    font-size: 1rem;
+    background-color:var(--beigne);
+    border: none;
+    border-radius: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    z-index: 1;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-left: 190px;
+    margin-bottom: 40px ;
+}
+
+.btn--secondary:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 768px) {
+    .cadre__participer {
+        padding: 60px 40px;
+    }
+
+    .cadre__title {
+        font-size: 2.2rem;
+    }
+
+    .btn--secondary {
+        font-size: 1.2rem;
+        padding: 20px 40px;
+    }
+}
+
 
 @media (min-width: 768px) {
     .films__container {
@@ -210,3 +345,6 @@ p {
         max-width: 800px;
     }
 }
+
+/* Reservation page */
+

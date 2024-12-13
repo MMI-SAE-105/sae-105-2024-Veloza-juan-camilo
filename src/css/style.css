@@ -24,4 +24,5 @@
 @import "components/about.css";
 @import "components/card.css";
 @import "components/section.css"; 
-    
+@import "components/article.css";
+@import "components/div.css";

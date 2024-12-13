@@ -1,6 +1,6 @@
 .hero__image{
     min-width: 300px;
-    width: 430px;
+    width: 100%;
 }
 .visually-hidden{
     position: relative;

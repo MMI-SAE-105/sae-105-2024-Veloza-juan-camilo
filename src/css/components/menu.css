@@ -16,10 +16,12 @@
 .menu__close-btn {
     font-size: 2rem;
     font-weight: bold;
-    color: #f1f1f1;
     position: absolute;
-    top: 40px;
-    left: 380px;
+    color: var(--variation-du-noir-gris-claire);
+    background-color: transparent;
+    border : none;
+    top: 50px;
+    left: 382px;
     text-decoration: none;
     cursor: pointer;
 }
