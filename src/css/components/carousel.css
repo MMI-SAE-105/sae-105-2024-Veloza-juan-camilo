@@ -35,10 +35,10 @@
 
 
 .carousel__controls button {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--bleu-obscure);
     color: white;
     padding: 0.5rem;
-    border-radius: 50%;
+    border-radius: 30px;
 }
 
 

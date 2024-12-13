@@ -1,4 +1,6 @@
 /* Les invités page */
+/* ################################################################################## */
+
 
 .les__invites {
     margin: 20px;
@@ -91,6 +93,8 @@ p.jurys__text {
 
 
 /* Carla page */
+/* ################################################################################## */
+
 
 .nom-invite{
     position: relative;
@@ -143,4 +147,276 @@ p.jurys__text {
     margin:30px;
     display:flex;
     align-content: center;
+}
+
+
+/* reservation page */
+/* ################################################################################## */
+.container {
+    text-align: left;
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.title-reservation {
+    font-size: var(--taille-heading-0);
+    line-height: 0.9;
+    display: inline-block;
+    position: absolute;
+    padding-left: 110px;
+    transform: translateY(50%) scale(1.5);
+}
+
+.star {
+    font-size: 40px;
+    position: absolute;
+    margin-left: -50px;
+    top: 15px;
+}
+
+.line {
+    font-size: var(--taille-heading-0);
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.line.middle {
+    margin-left: -50px;
+    margin-top: -55px;
+}
+
+.line:last-of-type {
+    margin-top: -55px;
+    margin-left: -20px;
+}
+
+.chair {
+    width: 100%;
+}
+
+.description {
+    padding-left: 60px;
+    line-height: 110%;
+    position: absolute;
+    transform: translateY(570%);
+    padding-right: 34px;
+    text-align: left;
+}
+
+@media (max-width: 500px) {
+    .title-reservation {
+        font-size: calc(var(--taille-heading-0) * 0.6);
+        padding-left: 40px;
+        transform: translateY(40%) scale(1);
+    }
+
+    .star {
+        font-size: 20px;
+
+        margin-left: -20px;
+        top: 5px;
+    }
+
+    .line.middle {
+        margin-left: -20px;
+        margin-top: -30px;
+    }
+
+    .line:last-of-type {
+        margin-top: -30px;
+        margin-left: -10px;
+    }
+
+    .description {
+        padding-left: 20px;
+        padding-right: 10px;
+        line-height: 130%;
+        transform: translateY(450%);
+    }
+
+    .chair {
+        width: 100%;
+    }
+}
+
+/* RESERVATION */
+/* ################################################################################## */
+
+div.seance{
+    background-color: var(--vert);
+    padding: 25px;
+    position: relative;
+    margin-top: -20px;
+}
+.title.seance--violet{
+    display: flex;
+    justify-content: right;
+}
+.title.seance--beigne{
+    display: flex;
+    justify-content: right;
+}
+.films {
+    width: 100%;
+    margin: 0 auto;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.subtitle {
+    font-size: var(--taille-heading-3);
+    margin: 0 0 16px 0;
+}
+
+.separation__gras {
+    border: none;
+    border-top: 2px solid #333;
+    margin: 0 0 24px 0;
+}
+
+.movies {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.movie__img {
+    width: 96px;
+    height: 128px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.movie__text-small {
+    font-size: var(--taille-small-texte);
+    color: var(--variation-du-noir-gris-obscure);
+    margin: 0;
+}
+
+.separation__small {
+    width: 48px;
+    border: none;
+    border-top: 1px solid black;
+    margin: 8px 0;
+}
+
+.movie__text {
+    margin: 0;
+    font-size: var(--taille-body-1);
+    line-height: 1.4;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 24px;
+    font-size: var(--taille-bouton);
+    text-decoration: none;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 16px;
+}
+
+.separation {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 24px 0;
+}
+
+@media (max-width: 400px) {
+    .films {
+        padding: 16px;
+    }
+
+    .movies {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .movie__img {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+        margin-bottom: 16px;
+    }
+
+    .movie__content {
+        text-align: center;
+    }
+
+    .separation__small {
+        margin: 8px auto;
+    }
+}
+.cadre__probleme {
+    position: relative;
+    background-color: var(--bleu-obscure);
+    color: white;
+    padding: 30px 10px;
+    text-align: left;
+    overflow: hidden;
+    margin: 30px 0;
+}
+
+.cadre__probleme::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, transparent 70%);
+    opacity: 0.6;
+    z-index: 0;
+    pointer-events: none;
+    mask-image: url('/assets/img/points.png');
+    mask-repeat: no-repeat;
+    mask-position: center;
+}
+
+.cadre__title-probleme {
+    font-size: var(--taille-heading-1);
+    margin-bottom: 20px;
+    z-index: 1;
+    position: relative;
+    line-height: 110%;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.cadre__text-probleme{
+    font-size: var(--taille-heading-3);
+    line-height: 16px;
+    margin-bottom: 20px;
+    z-index: 1;
+    position: relative;
+    margin-left: 5px;
+    line-height: 110%;
+    padding-right: 20%;
+    padding-top: 30px;
+}
+
+
+.btn.btn--tertiary {
+    display: inline-block;
+    padding: 15px 30px;
+    color:white;
+    font-size: 1rem;
+    background-color: transparent;
+    border: white 1px solid;
+    border-radius: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    z-index: 1;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-left: 128px;
+    margin-bottom: 40px;
+}
+
+.btn--secondary:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
